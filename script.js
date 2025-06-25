@@ -5,7 +5,11 @@ inputField.addEventListener("input", function () {
     const inputLength = inputField.value.length;
     charCount.innerHTML = inputLength;
     //background color change
-    if(inputLength==maxLength){
-        document.body.style.backgroundColor = "#e74c3c";
-    }
+    if (inputLength >= maxLength) {
+        inputField.style.backgroundColor = "#e74c3c";
+        inputField.style.color = "#ffffff";
+      } else {
+        inputField.style.backgroundColor = "";
+        inputField.style.color = "";
+      }
 });
