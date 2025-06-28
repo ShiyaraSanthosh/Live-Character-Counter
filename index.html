@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Counter</title>
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="h-[100vh] bg-gradient-to-b from-sky-200 to-blue-600">
     <div class="container">
@@ -18,16 +15,20 @@
             Live Character Counter
           </h1>
           <div
-            class="text_field border-[2px] border-solid border-white w-[40%] h-[300px] m-[40px auto] p-[40px 30px 70px] bg-white"
+            class="text_field border-[2px] border-solid border-white rounded-[10px] w-[40%] h-[300px] mt-[40px] mx-[auto] p-[40px 30px 70px] bg-white"
             text-[14px]
           >
             <textarea
               id="input_field"
               placeholder="something write...!"
               maxlength="150"
-              class="w-[100%] max-h-[550px] h-[100px] p-[10px] text-[1em] border-[2px] border-solid border-#ccc radius-[8px] mr-[30px]"
+              class="w-[100%] max-w-[560px] h-[100px] p-[10px] text-[1em] border-[2px] border-solid border-[#ccc] radius-[8px] mr-[30px] mt-[20px] ml-[20px]"
             ></textarea>
-            <p class="counter"><span id="char-count">0</span>/150 characters</p>
+            <p
+              class="counter mt-[10px] text-[0.9em] text-[#555] mt-[40px] mx-[auto] ml-[40%] text-[19px]"
+            >
+              <span id="char-count">0</span>/150 characters
+            </p>
           </div>
         </div>
       </div>
